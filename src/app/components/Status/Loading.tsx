@@ -4,5 +4,9 @@ interface LoadingProps {
 }
 
 export default function Loading({ message, isLoading }: LoadingProps) {
-    return isLoading ? <p>{message}</p> : null;
+    return(
+        <div className="isLoading">
+            {isLoading ? <p>{message}</p> : null}
+        </div>
+    )
 }

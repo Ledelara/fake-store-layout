@@ -4,5 +4,9 @@ interface ErrorProps {
 }
 
 export default function Error({ message, isError }: ErrorProps) {
-    return isError ? <p>{message}</p> : null;
+    return (
+        <div className="isError">
+            {isError ? <p>{message}</p> : null}
+        </div>
+    )
 }
