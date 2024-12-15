@@ -3,7 +3,12 @@
   --foreground: #171717;
   --white: #ffffff;
   --black-01: #000000;
-  --black-02: rgba(0, 0, 0, 0.2)
+  --black-02: rgba(0, 0, 0, 0.2);
+  --black-03: rgba(0, 0, 0, 0.3);
+  --red-01: #ff0000;
+  --error-01: rgba(255, 0, 0, 0.1);
+  --error-02: rgba(255, 0, 0, 0.3);
+  --error-03: rgba(255, 0, 0, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
