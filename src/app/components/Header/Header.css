@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__menu__items {
+
+}
+
+.navbar__menu__items a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 648px) {
+    .navbar {
+        padding: 2em 1em;
+        justify-content: center;
+        flex-direction: column;
+        transition: height 0.3s ease, padding 0.3s ease;
+    }
+
+    .navbar__menu {
+        margin-top: 20px;
+    }
+
+    /* Efeito com scroll */
+    .navbar--scrolled {
+        height: 3rem; /* Altura menor ao desaparecer o h1 */
+        padding: 0.5rem 1rem; /* Reduza o padding para a altura diminuir suavemente */
+    }
+
+    .navbar__logo {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .navbar__logo--hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+        position: absolute;
+    }
+
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar__menu__items a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-right: 1rem;
+    }
+    
+}
