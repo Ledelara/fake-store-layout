@@ -1,3 +1,5 @@
+import './Error.css';
+
 interface ErrorProps {
     message: string;
     isError: boolean;
