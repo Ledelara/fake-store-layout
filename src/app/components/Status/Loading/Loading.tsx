@@ -1,3 +1,5 @@
+import './Loading.css';
+
 interface LoadingProps {
     message: string;
     isLoading: boolean;
