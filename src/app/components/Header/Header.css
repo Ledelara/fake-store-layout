@@ -7,15 +7,15 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #000;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px var(--black-02);
+    color: var(--black-01);
 }
 
 .navbar__logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #000;
+    color: var(--black-01);
 }
 
 .navbar__menu {
@@ -29,7 +29,7 @@
 
 .navbar__menu__items a {
     text-decoration: none;
-    color: #000;
+    color: var(--black-01);
     font-size: 1rem;
     font-weight: 500;
     margin-right: 1rem;
@@ -49,8 +49,8 @@
 
     /* Efeito com scroll */
     .navbar--scrolled {
-        height: 3rem; /* Altura menor ao desaparecer o h1 */
-        padding: 0.5rem 1rem; /* Reduza o padding para a altura diminuir suavemente */
+        height: 3rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar__logo {
@@ -69,13 +69,4 @@
         justify-content: center;
         width: 100%;
     }
-    
-    .navbar__menu__items a {
-        text-decoration: none;
-        color: #000;
-        font-size: 1rem;
-        font-weight: 500;
-        margin-right: 1rem;
-    }
-    
 }
