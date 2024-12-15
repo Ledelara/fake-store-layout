@@ -1,7 +1,7 @@
 'use client'
 
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "../../../services/api";
+import { getProducts } from "../../services/api";
 import { Product } from "../../interface/interface";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Loading from "../../components/Status/Loading";
