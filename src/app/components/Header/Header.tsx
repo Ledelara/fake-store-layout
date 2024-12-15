@@ -27,8 +27,9 @@ export default function Header() {
             <ul className='navbar__menu'>
                 <li className='navbar__menu__items'> 
                     <a href='#'>Início</a>
-                    <a href='#'>Nossos produtos</a>
-                    <a href='#'>Sobre</a>
+                    <a href='#'>Eletrônicos</a>
+                    <a href='#'>Jóias</a>
+                    <a href='#'>Roupas</a>
                 </li>
             </ul>
         </div>
