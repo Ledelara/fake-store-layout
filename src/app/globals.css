@@ -2,6 +2,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --white: #ffffff;
+  --white-01: #d9d9d9;
   --black-01: #000000;
   --black-02: rgba(0, 0, 0, 0.2);
   --black-03: rgba(0, 0, 0, 0.3);
@@ -11,13 +12,6 @@
   --error-03: rgba(255, 0, 0, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
   max-width: 100vw;
@@ -25,8 +19,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black-01);
+  background: var(--white-01);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
