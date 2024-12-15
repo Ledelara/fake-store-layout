@@ -17,14 +17,18 @@ export default function Home() {
         <div className="Home">
             <h1>Produtos</h1>
             <ul>
-                <Loading 
-                    message="Carregando..." 
-                    isLoading={isLoading} 
-                />
-                <Error 
-                    message="Erro ao carregar produtos" 
-                    isError={isError} 
-                />
+                {isLoading && (
+                    <Loading 
+                        message="Carregando..." 
+                        isLoading={isLoading} 
+                    />
+                )}
+                {isError && (
+                    <Error 
+                        message="Erro ao carregar produtos" 
+                        isError={isError} 
+                    />
+                )}
                 {data?.map((product: Product) => (
                     <li key={product.id}>
                         <ProductCard product={product} />
