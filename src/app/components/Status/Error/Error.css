@@ -1,0 +1,21 @@
+.isError {
+    color: var(--red-01);
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px var(--black-03);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--error-01);  
+    border: 1px solid var(--error-02);
+    box-shadow: 0 0 5px var(--error-03);
+    transition: all 0.3s;
+}
